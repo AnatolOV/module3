@@ -1,21 +1,20 @@
-# def print_params(args):
-#     for key, value in args.items():
-#         print(key)
-#         print(value)
-#     print('аргументы: ', args)
-# dict_ = {'e':4, 'r':5}
-# print_params(dict_)
-# def summutor(*args, name="wed"):
-#     s = 0
-#     for i in args:
-#         s += i
-#     print(s)
-#     print(name)
-#
-# summutor(1,2,3,5, name="d")
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+primes = []
+not_primes = []
+for i in numbers:
+    if i == 1:
+        notSimple.append(i)
+    for j in range(2, i-1):
+        if i%j==0:
+         not_primes.append(i)
+            break
+        elif i==2:
+            primes.append(i)
+        else:
+            not_primes.append(i)
+            break
 
-def print_(a):
-    print(a)
-list_ = {'s':3,'f':5,'r': 6}
-# print_(1,5)
-print_(list_)
+
+
+print('Простые числа: ', primes)
+print('Непростые числа: ', not_primes)
